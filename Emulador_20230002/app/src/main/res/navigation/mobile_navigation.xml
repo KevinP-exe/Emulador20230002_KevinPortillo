@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Inicio">
+
+    <fragment
+        android:id="@+id/navigation_Inicio"
+        android:name="com.example.emulador_20230002.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_Perfil"
+        android:name="com.example.emulador_20230002.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_Informacion"
+        android:name="com.example.emulador_20230002.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/FragmentContactanos"
+        android:name="com.example.emulador_20230002.ui.contactanos.fragment_Contactanos"
+        android:label="Contactanos"
+        tools:layout="@layout/fragment__contactanos" />
+</navigation>
